@@ -1,0 +1,42 @@
+
+.mobile{
+    background-image: url("/assets/Homepage-Promo-Model-3-Mobile-US-July.avif");
+    background-image: url('/assets/Homepage-Promo-Cybertruck-Mobile.avif');
+    background-image: url('/assets/Homepage-Promo-FTC-Mobile.avif');
+    background-image: url('/assets/Homepage-Card-Cybertruck-Mobile-Dynamic-Asset.avif');
+    background-image: url('/assets/Homepage-Card-Model-X-Mobile-US.avif');
+    background-image: url('/assets/Homepage-Card-Model-S-Mobile-US.avif');
+    background-image: url('/assets/Homepage-Card-Model-3-Mobile-US.avif');
+    background-image: url('/assets/Homepage-Card-Model-Y-Mobile-US.avif');
+    background-image: url('/assets/Homepage-Grid-Current-Offers.avif');
+    background-image: url('/assets/Homepage-Grid-Compare-3-Y.avif');
+    background-image: url('/assets/Homepage-Features-Mobile.avif');
+    background-image: url('/assets/Homepage-Card-Megapack-Mobile.avif');
+    background-image: url('/assets/Homepage-Card-Powerwall-Mobile.avif');
+    background-image: url('/assets/Homepage-Card-Solar-Panels-Mobile.avif');
+    background-image: url('/assets/Homepage-Card-Solar-Roof-Mobile.avif');
+}
+
+.desktop{
+    background-image: url('/assets/Homepage-Promo-FTC-Desktop.avif');
+    background-image: url('assets/Homepage-Promo-Model-3-Desktop-US-July.avif');
+    background-image: url('/assets/Homepage-Promo-Cybertruck-Desktop.avif');
+    background-image: url('/assets/Homepage-Card-Cybertruck-Desktop-Dynamic-Asset.avif');
+    background-image: url('/assets/Homepage-Card-Model-3-Desktop-US.avif');
+    background-image: url('/assets/Homepage-Card-Model-S-Desktop-US.avif');
+    background-image: url('/assets/Homepage-Card-Model-X-Desktop-US.avif');
+    background-image: url('/assets/Homepage-Card-Model-Y-Desktop-US.avif');
+    background-image: url('/assets/Homepage-Features-Desktop.avif');
+    background-image: url('/assets/Homepage-Card-Solar-Panels-Desktop.avif');
+    background-image: url('/assets/Homepage-Card-Powerwall-Desktop.avif');
+    background-image: url('/assets/Homepage-Card-Solar-Roof-Desktop.avif');
+    background-image: url('/assets/Homepage-Card-Megapack-Desktop.avif');
+    background-image: url('/assets/cybertruck/CT-Configurator-Hero-All-Wheel-Drive-20inch-Core-Desktop.avif');
+    background-image: url('/assets/cybertruck/compositor.jpg');
+    background-image: url('/assets/cybertruck/compositor-1.jpg');
+    background-image: url('/assets/cybertruck/compositor-2.jpg');
+    background-image: url('/assets/cybertruck/compositor-3.jpg');
+    background-image: url('/assets/cybertruck/CT-Configurator-Towing-Desktop.avif');
+    background-image: url('/assets/cybertruck/powershare_home_backup_02.avif');
+    background-image: url('/assets/cybertruck/CT-Configurator-Hero-Cyberbeast-Desktop.avif');
+}
