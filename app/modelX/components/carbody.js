@@ -256,9 +256,7 @@ export default function CarBody() {
 
   return (
     <div className="relative flex [@media(max-width:500px)]:flex-col [@media(min-width:500px)]:mt-8  [@media(min-width:500px)]:pt-16">
-      <div
-        className={`h-[500vh] [@media(min-width:900px)]:w-[70%] [@media(min-width:500px)]:w-[50%] [@media(max-width:500px)]:w-[100%]`}
-      >
+      <div className={`h-[500vh]`}>
         <div className="sticky z-20 [@media(max-width:500px)]:top-0 [@media(min-width:500px)]:top-[100px]">
           {gray && pherihelix && (
             <img
@@ -342,7 +340,7 @@ export default function CarBody() {
           />
         </div>
       </div>
-      <div className="flex flex-col items-center z-10 [@media(max-width:500px)]:pt-[110px] [@media(max-width:500px)]:absolute top-30 [@media(min-width:900px)]:w-[30%] [@media(min-width:500px)]:w-[50%] [@media(max-width:500px)]:w-[100%]">
+      <div className="flex flex-col items-center z-10 [@media(max-width:500px)]:pt-[110px] [@media(max-width:500px)]:absolute top-30">
         <p className="text-2xl font-bold">Model X</p>
         <div className="flex justify-between w-[80%] text-sm mt-4">
           <div className="text-center">

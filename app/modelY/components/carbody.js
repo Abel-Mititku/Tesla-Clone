@@ -192,9 +192,7 @@ export default function CarBody() {
 
   return (
     <div className="relative flex [@media(max-width:500px)]:flex-col [@media(min-width:500px)]:mt-8  [@media(min-width:500px)]:pt-16">
-      <div
-        className={`h-[300vh] [@media(min-width:900px)]:w-[70%] [@media(min-width:500px)]:w-[50%] [@media(max-width:500px)]:w-[100%]`}
-      >
+      <div className={`h-[300vh]`}>
         <div className="sticky z-20 [@media(max-width:500px)]:top-0 [@media(min-width:500px)]:top-[100px]">
           {gray && photon && (
             <img
@@ -278,7 +276,7 @@ export default function CarBody() {
           />
         </div>
       </div>
-      <div className="flex flex-col items-center z-10 [@media(max-width:500px)]:pt-[150px] [@media(max-width:500px)]:absolute top-30 [@media(min-width:900px)]:w-[30%] [@media(min-width:500px)]:w-[50%] [@media(max-width:500px)]:w-[100%]">
+      <div className="flex flex-col items-center z-10 [@media(max-width:500px)]:pt-[150px] [@media(max-width:500px)]:absolute top-30">
         <p className="text-2xl font-bold">Model Y</p>
         <div className="flex w-full justify-center items-center text-xs">
           <img src="/assets/model3/grok-icon.webp" className="w-4 h-4" />
