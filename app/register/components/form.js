@@ -1,6 +1,5 @@
 "use client";
 import { Link } from "lucide-react";
-import { set } from "nprogress";
 import { useState } from "react";
 import ReCAPTCHA from "react-google-recaptcha";
 

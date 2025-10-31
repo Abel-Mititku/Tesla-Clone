@@ -10,7 +10,6 @@ export default function Model3() {
     <div>
       <Hero />
       <TeslaLogo />
-      <CarBody />
     </div>
   );
 }
