@@ -141,6 +141,9 @@ export default function HeaderHero() {
           <div className="mt-16 flex flex-col items-center">
             <div className={`text-4xl font-bold text-white sm:text-5xl `}>
               CYBERTRUCK
+              <p className="flex min-[500px]-hidden">
+                This is the disappearing text
+              </p>
             </div>
             <a
               href="#"
