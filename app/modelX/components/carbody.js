@@ -340,7 +340,7 @@ export default function CarBody() {
           />
         </div>
       </div>
-      <div className="flex flex-col items-center z-10 [@media(max-width:500px)]:pt-[110px] [@media(max-width:500px)]:absolute top-30">
+      <div className="flex flex-col items-center z-10 [@media(max-width:500px)]:absolute top-[350px]">
         <p className="text-2xl font-bold">Model X</p>
         <div className="flex justify-between w-[80%] text-sm mt-4">
           <div className="text-center">
