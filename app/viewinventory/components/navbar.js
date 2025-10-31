@@ -79,7 +79,7 @@ export default function Navigation() {
   }, [menuOpen, click]);
 
   return (
-    <nav className="w-full z-30 absolute [@media(max-width:500px)]:sticky top-0 [@media(min-width:500px)]:top-[40px]">
+    <nav className="w-full z-30 absolute [@media(max-width:500px)]:sticky top-0 [@media(min-width:500px)]:fixed [@media(min-width:500px)]:top-[40px]">
       <div className="flex flex-col absolute top-0 z-10 w-full">
         <div className="flex justify-between h-[40px] items-center [@media(min-width:500px)]:bg-white">
           <a
