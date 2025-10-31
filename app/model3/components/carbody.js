@@ -326,7 +326,7 @@ export default function CarBody() {
   };
 
   return (
-    <div className="relative flex max-[500px]:flex-col min-[500px]:mt-8 min-[500px]:pt-16">
+    <div className="relative flex max-[500px]:flex-col min-[500px]:mt-8 min-[500px]:pt-16 w-screen">
       <div
         className={`h-[500vh] min-[900px]:w-[70%] min-[500px]:w-[50%] max-[500px]:w-full`}
       >
