@@ -6,6 +6,7 @@ import { ChevronUp } from "lucide-react";
 import { useState, useRef } from "react";
 import Payment from "@/app/payment/payment";
 import { Orbitron } from "next/font/google";
+import "../../style.css";
 
 const orbitron = Orbitron({ subsets: ["latin"], weight: ["400", "700"] });
 
@@ -83,15 +84,15 @@ export default function CarBody() {
 
   return (
     <div
-      className={`relative flex [@media(max-width:500px)]:flex-col [@media(min-width:500px)]:mt-8  [@media(min-width:500px)]:pt-16 ${orbitron.className}`}
+      className={`relative flex [@media(max-width:500px)]:flex-col [@media(min-width:500px)]:mt-8  [@media(min-width:500px)]:pt-16 ${orbitron.className} w-screen`}
     >
       <div
-        className={`[@media(min-width:500px)]:h-[600vh] [@media(max-width:500px)]:h-[100vh]`}
+        className={`[@media(min-width:500px)]:h-[600vh] [@media(max-width:500px)]:h-[100vh] [@media(min-width:500px)]:w-[50%] [@media(min-width:800px)]:w-[60%]`}
       >
-        <div className="sticky z-20 [@media(max-width:500px)]:top-0 [@media(min-width:500px)]:top-[100px]">
+        <div className="sticky z-20 [@media(max-width:500px)]:top-0 [@media(min-width:500px)]:top-[100px]  w-full">
           {core && currentIndex !== 5 && (
             <div
-              className={` z-10 h-[400px] bg-center bg-cover bg-no-repeat `}
+              className={` z-10 h-[400px] bg-center bg-cover bg-no-repeat w-full`}
               style={{
                 backgroundImage: `url(/assets/cybertruck/${modelCore[currentIndex]})`,
               }}
@@ -118,11 +119,11 @@ export default function CarBody() {
           )}
 
           <ChevronLeft
-            className="w-8 h-8 p-2 rounded bg-gray-200 text-black absolute top-[100px] left-0 z-40 [@media(min-width:800px)]:top-[150px] [@media(min-width:800px)]:flex hidden [@media(max-width:500px)]:flex cursor-pointer hover:bg-gray-100"
+            className="arrow w-8 h-8 p-2 rounded bg-gray-200 text-black absolute top-[100px] left-0 z-40 top-[150px] cursor-pointer hover:bg-gray-100"
             onClick={handlePrev}
           />
           <ChevronRight
-            className="w-8 h-8 p-2 rounded bg-gray-200 text-black absolute top-[100px] right-0 [@media(min-width:800px)]:top-[150px] [@media(min-width:800px)]:flex hidden [@media(max-width:500px)]:flex z-40 cursor-pointer hover:bg-gray-100"
+            className="arrow w-8 h-8 p-2 rounded bg-gray-200 text-black absolute top-[100px] right-0 z-40 top-[150px] cursor-pointer hover:bg-gray-100"
             onClick={handleNext}
           />
         </div>
@@ -384,7 +385,7 @@ export default function CarBody() {
           )}
         </div>
       )}
-      <div className="hidden flex-col items-center z-10 [@media(min-width:500px)]:flex  [@media(min-width:900px)]:w-[30%] [@media(min-width:500px)]:w-[50%]">
+      <div className="flex flex-col cyber items-center z-10 [@media(max-width:500px)]:hidden [@media(min-width:500px)]:w-[50%]">
         <p className="text-2xl font-bold">CYBERTRUCK</p>
         <div className="flex w-full justify-center items-center text-xs">
           <img src="/assets/model3/grok-icon.webp" className="w-4 h-4" />

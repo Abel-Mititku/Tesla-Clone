@@ -5,6 +5,7 @@ import { ChevronDown } from "lucide-react";
 import { ChevronUp } from "lucide-react";
 import { useState, useRef } from "react";
 import { useRouter } from "next/navigation";
+import "../../style.css";
 import Image from "next/image";
 import { supabase } from "@/app/lib/supabaseClient";
 

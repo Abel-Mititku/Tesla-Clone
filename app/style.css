@@ -1,0 +1,13 @@
+.arrow{
+    display: none;
+}
+@media (min-width:500px) {
+    .arrow{
+        display: flex;
+    }
+}
+@media (min-width:800px) {
+    .cyber{
+        width:40%;
+    }
+}
