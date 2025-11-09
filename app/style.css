@@ -1,6 +1,9 @@
 .arrow{
     display: none;
 }
+.show{
+    display: none;
+}
 @media (min-width:500px) {
     .arrow{
         display: flex;
@@ -15,5 +18,11 @@
     .cyber{
         display: none;
         scrollbar-width: none;
+    }
+}
+
+@media (max-width:800px) {
+    .show{
+        display: flex;
     }
 }
