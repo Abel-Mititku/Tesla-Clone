@@ -14,15 +14,30 @@
         width:40%;
     }
 }
-@media (max-width:800px) {
+@media (max-width:500px) {
     .cyber{
         display: none;
         scrollbar-width: none;
     }
 }
 
-@media (max-width:800px) {
+@media (max-width:500px) {
     .show{
         display: flex;
+    }
+}
+@media (min-width:500px) {
+    .car-section{
+        width: 50%;
+    }
+}
+@media (min-width:800px) {
+    .car-section{
+        width: 60%;
+    }
+}
+@media (max-width:500px) {
+    .car-section{
+        width: 100%;
     }
 }
