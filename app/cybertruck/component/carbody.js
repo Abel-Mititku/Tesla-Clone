@@ -150,7 +150,7 @@ export default function CarBody() {
         </div>
       )}
       {show && (
-        <div className="flex flex-col items-center relative z-30 bg-white [@media(min-width:500px)]:hidden [@media(max-width:500px)]:absolute top-0 [@media(min-width:900px)]:w-[30%] [@media(min-width:500px)]:w-[50%] [@media(max-width:500px)]:w-[100%]">
+        <div className="flex flex-col mobile-menu items-center relative z-50 bg-white">
           <div className="absolute top-0 right-0 h-[100vh]">
             <X className="sticky top-5" onClick={() => setShow(false)} />
           </div>
@@ -802,7 +802,7 @@ export default function CarBody() {
             </div>
           </div>
         )}
-        <p
+        <div
           className="text-xs opacity-[0.8] mt-6"
           onClick={() => setDetails((prev) => !prev)}
         >
@@ -816,7 +816,7 @@ export default function CarBody() {
               Hide Pricing Details <ChevronUp className="w-4 h-4" />
             </p>
           )}
-        </p>
+        </div>
         <div className="flex justify-between font-bold w-[90%] mt-6">
           <p>Est. Lease Payment</p> <p>${totalPrice}/mo</p>
         </div>

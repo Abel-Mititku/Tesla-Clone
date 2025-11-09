@@ -4,6 +4,9 @@
 .show{
     display: none;
 }
+.mobile-menu{
+    display: none;
+}
 @media (min-width:500px) {
     .arrow{
         display: flex;
@@ -39,5 +42,13 @@
 @media (max-width:500px) {
     .car-section{
         width: 100%;
+    }
+}
+
+@media (max-width:500px) {
+    .mobile-menu{
+        display: block;
+        position: absolute;
+        top: 0;
     }
 }
