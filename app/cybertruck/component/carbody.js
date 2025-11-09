@@ -150,8 +150,8 @@ export default function CarBody() {
         </div>
       )}
       {show && (
-        <div className="flex flex-col mobile-menu items-center relative z-50 bg-white">
-          <div className="absolute top-0 right-0 h-[100vh]">
+        <div className="flex flex-col mobile-menu items-center relative z-50 bg-white w-full">
+          <div className="absolute top-0 right-5 h-[100vh]">
             <X className="sticky top-5" onClick={() => setShow(false)} />
           </div>
           <p className="text-2xl font-bold">Financing Options</p>
