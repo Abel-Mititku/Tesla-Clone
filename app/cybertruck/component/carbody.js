@@ -129,7 +129,7 @@ export default function CarBody() {
         </div>
       </div>
       {!show && (
-        <div className="flex [@media(min-width:500px)]:hidden text-xs justify-between items-center h-12 w-full fixed bottom-0">
+        <div className="z-50 flex [@media(min-width:500px)]:hidden text-xs justify-between items-center h-12 w-full fixed bottom-0">
           <div className="flex ml-4">
             <div>
               {" "}
