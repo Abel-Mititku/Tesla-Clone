@@ -87,7 +87,7 @@ export default function CarBody() {
       className={`relative flex [@media(max-width:500px)]:flex-col [@media(min-width:500px)]:mt-8  [@media(min-width:500px)]:pt-16 ${orbitron.className} w-screen`}
     >
       <div
-        className={`[@media(min-width:500px)]:h-[600vh] [@media(max-width:500px)]:h-[100vh] [@media(min-width:500px)]:w-[50%] [@media(min-width:800px)]:w-[60%]`}
+        className={`[@media(min-width:500px)]:h-[600vh] [@media(min-width:500px)]:w-[50%] [@media(min-width:800px)]:w-[60%]`}
       >
         <div className="sticky z-20 [@media(max-width:500px)]:top-0 [@media(min-width:500px)]:top-[100px]  w-full">
           {core && currentIndex !== 5 && (
