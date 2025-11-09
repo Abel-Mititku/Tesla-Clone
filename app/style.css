@@ -11,3 +11,8 @@
         width:40%;
     }
 }
+@media (max-width:800px) {
+    .cyber{
+        display: none;
+    }
+}

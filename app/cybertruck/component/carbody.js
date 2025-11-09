@@ -385,7 +385,7 @@ export default function CarBody() {
           )}
         </div>
       )}
-      <div className="flex flex-col cyber items-center z-10 [@media(max-width:500px)]:hidden [@media(min-width:500px)]:w-[50%]">
+      <div className="flex flex-col cyber items-center z-10 [@media(min-width:500px)]:w-[50%]">
         <p className="text-2xl font-bold">CYBERTRUCK</p>
         <div className="flex w-full justify-center items-center text-xs">
           <img src="/assets/model3/grok-icon.webp" className="w-4 h-4" />
