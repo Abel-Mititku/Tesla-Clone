@@ -193,87 +193,89 @@ export default function CarBody() {
 
   return (
     <div className="relative flex [@media(max-width:500px)]:flex-col [@media(min-width:500px)]:mt-8  [@media(min-width:500px)]:pt-16">
-      <div className="sticky z-20 h-[100vh] model-Y">
-        {gray && photon && (
-          <img
-            src={`/assets/modelY/${modelGrayPhoton[currentIndex]}`}
-            className="z-10 object-contain"
+      <div className="h-[300vh]">
+        <div className="sticky z-20 top-0 model-Y">
+          {gray && photon && (
+            <img
+              src={`/assets/modelY/${modelGrayPhoton[currentIndex]}`}
+              className="z-10 object-contain"
+            />
+          )}
+          {red && photon && (
+            <img
+              src={`/assets/modelY/${modelRedPhoton[currentIndex]}`}
+              className="z-10 object-contain"
+            />
+          )}
+          {blue && photon && (
+            <img
+              src={`/assets/modelY/${modelBluePhoton[currentIndex]}`}
+              className="z-10 object-contain"
+            />
+          )}
+          {silver && photon && (
+            <img
+              src={`/assets/modelY/${modelSilverPhoton[currentIndex]}`}
+              className="z-10 object-contain"
+            />
+          )}
+          {black && photon && (
+            <img
+              src={`/assets/modelY/${modelBlackPhoton[currentIndex]}`}
+              className="z-10 object-contain"
+            />
+          )}
+          {white && photon && (
+            <img
+              src={`/assets/modelY/${modelWhitePhoton[currentIndex]}`}
+              className="z-10 object-contain"
+            />
+          )}
+          {gray && nova && (
+            <img
+              src={`/assets/modelY/${modelGrayNova[currentIndex]}`}
+              className="z-10 object-contain"
+            />
+          )}
+          {white && nova && (
+            <img
+              src={`/assets/modelY/${modelWhiteNova[currentIndex]}`}
+              className="z-10 object-contain"
+            />
+          )}
+          {blue && nova && (
+            <img
+              src={`/assets/modelY/${modelBlueNova[currentIndex]}`}
+              className="z-10 object-contain"
+            />
+          )}
+          {black && nova && (
+            <img
+              src={`/assets/modelY/${modelBlackNova[currentIndex]}`}
+              className="z-10 object-contain"
+            />
+          )}
+          {silver && nova && (
+            <img
+              src={`/assets/modelY/${modelSilverNova[currentIndex]}`}
+              className="z-10 object-contain"
+            />
+          )}
+          {red && nova && (
+            <img
+              src={`/assets/modelY/${modelRedNova[currentIndex]}`}
+              className="z-10 object-contain"
+            />
+          )}
+          <ChevronLeft
+            className="w-8 h-8 p-2 rounded bg-gray-200 text-black absolute top-[100px] left-0 z-40 [@media(min-width:800px)]:top-[150px] [@media(min-width:800px)]:flex hidden [@media(max-width:500px)]:flex cursor-pointer hover:bg-gray-100"
+            onClick={handlePrev}
           />
-        )}
-        {red && photon && (
-          <img
-            src={`/assets/modelY/${modelRedPhoton[currentIndex]}`}
-            className="z-10 object-contain"
+          <ChevronRight
+            className="w-8 h-8 p-2 rounded bg-gray-200 text-black absolute top-[100px] right-0 [@media(min-width:800px)]:top-[150px] [@media(min-width:800px)]:flex hidden [@media(max-width:500px)]:flex z-40 cursor-pointer hover:bg-gray-100"
+            onClick={handleNext}
           />
-        )}
-        {blue && photon && (
-          <img
-            src={`/assets/modelY/${modelBluePhoton[currentIndex]}`}
-            className="z-10 object-contain"
-          />
-        )}
-        {silver && photon && (
-          <img
-            src={`/assets/modelY/${modelSilverPhoton[currentIndex]}`}
-            className="z-10 object-contain"
-          />
-        )}
-        {black && photon && (
-          <img
-            src={`/assets/modelY/${modelBlackPhoton[currentIndex]}`}
-            className="z-10 object-contain"
-          />
-        )}
-        {white && photon && (
-          <img
-            src={`/assets/modelY/${modelWhitePhoton[currentIndex]}`}
-            className="z-10 object-contain"
-          />
-        )}
-        {gray && nova && (
-          <img
-            src={`/assets/modelY/${modelGrayNova[currentIndex]}`}
-            className="z-10 object-contain"
-          />
-        )}
-        {white && nova && (
-          <img
-            src={`/assets/modelY/${modelWhiteNova[currentIndex]}`}
-            className="z-10 object-contain"
-          />
-        )}
-        {blue && nova && (
-          <img
-            src={`/assets/modelY/${modelBlueNova[currentIndex]}`}
-            className="z-10 object-contain"
-          />
-        )}
-        {black && nova && (
-          <img
-            src={`/assets/modelY/${modelBlackNova[currentIndex]}`}
-            className="z-10 object-contain"
-          />
-        )}
-        {silver && nova && (
-          <img
-            src={`/assets/modelY/${modelSilverNova[currentIndex]}`}
-            className="z-10 object-contain"
-          />
-        )}
-        {red && nova && (
-          <img
-            src={`/assets/modelY/${modelRedNova[currentIndex]}`}
-            className="z-10 object-contain"
-          />
-        )}
-        <ChevronLeft
-          className="w-8 h-8 p-2 rounded bg-gray-200 text-black absolute top-[100px] left-0 z-40 [@media(min-width:800px)]:top-[150px] [@media(min-width:800px)]:flex hidden [@media(max-width:500px)]:flex cursor-pointer hover:bg-gray-100"
-          onClick={handlePrev}
-        />
-        <ChevronRight
-          className="w-8 h-8 p-2 rounded bg-gray-200 text-black absolute top-[100px] right-0 [@media(min-width:800px)]:top-[150px] [@media(min-width:800px)]:flex hidden [@media(max-width:500px)]:flex z-40 cursor-pointer hover:bg-gray-100"
-          onClick={handleNext}
-        />
+        </div>
       </div>
       <div className="flex flex-col items-center z-10 w-full model-y">
         <p className="text-2xl font-bold">Model Y</p>
