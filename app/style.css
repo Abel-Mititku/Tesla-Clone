@@ -71,3 +71,9 @@
         top: 100px;
     }
 }
+
+@media (min-width:500px) {
+    .tesla-logo{
+        position: fixed;
+    }
+}

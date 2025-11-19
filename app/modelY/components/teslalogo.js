@@ -1,10 +1,11 @@
 "use client";
 import { GlobeIcon } from "lucide-react";
+import "../../style.css";
 
 export default function TeslaLogo() {
   return (
     <div className="relative">
-      <div className="[@media(min-width:500px)]:fixed z-30">
+      <div className="z-30 tesla-logo">
         <div className="text-black dark:black flex justify-between [@media(min-width:500px)]:mt-4 w-screen bg-white pt-4">
           <a href="#" className="ml-4 [@media(min-width:500px)]:ml-8">
             T E S L A
