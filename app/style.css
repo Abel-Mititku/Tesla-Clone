@@ -65,3 +65,9 @@
         top: 0;
     }
 }
+
+@media (min-width:500px) {
+    .model-Y{
+        top: 100px;
+    }
+}
