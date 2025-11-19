@@ -52,3 +52,9 @@
         top: 100px;
     }
 }
+
+@media (min-width:500px) {
+    .model-y{
+        height: 100vh;
+    }
+}
