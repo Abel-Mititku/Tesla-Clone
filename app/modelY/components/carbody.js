@@ -193,7 +193,7 @@ export default function CarBody() {
 
   return (
     <div className="relative flex [@media(max-width:500px)]:flex-col [@media(min-width:500px)]:mt-8  [@media(min-width:500px)]:pt-16">
-      <div className="sticky z-20 [@media(max-width:500px)]:top-0 [@media(min-width:500px)]:top-[100px] h-[100vh]">
+      <div className="sticky z-20 [@media(min-width:500px)]:top-[100px] h-[100vh] model-Y">
         {gray && photon && (
           <img
             src={`/assets/modelY/${modelGrayPhoton[currentIndex]}`}
