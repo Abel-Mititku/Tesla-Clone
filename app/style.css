@@ -53,8 +53,9 @@
     }
 }
 
-@media (min-width:500px) {
+@media (max-width:500px) {
     .model-y{
-        height: 100vh;
+        position: absolute;
+        top: 150px;
     }
 }

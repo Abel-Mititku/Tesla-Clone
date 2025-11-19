@@ -193,7 +193,7 @@ export default function CarBody() {
 
   return (
     <div className="relative flex [@media(max-width:500px)]:flex-col [@media(min-width:500px)]:mt-8  [@media(min-width:500px)]:pt-16">
-      <div className="sticky z-20 [@media(max-width:500px)]:top-0 [@media(min-width:500px)]:top-[100px] model-y">
+      <div className="sticky z-20 [@media(max-width:500px)]:top-0 [@media(min-width:500px)]:top-[100px] h-[100vh]">
         {gray && photon && (
           <img
             src={`/assets/modelY/${modelGrayPhoton[currentIndex]}`}
@@ -275,7 +275,7 @@ export default function CarBody() {
           onClick={handleNext}
         />
       </div>
-      <div className="flex flex-col items-center z-10 w-full">
+      <div className="flex flex-col items-center z-10 w-full model-y">
         <p className="text-2xl font-bold">Model Y</p>
         <div className="flex w-full justify-center items-center text-xs">
           <img src="/assets/model3/grok-icon.webp" className="w-4 h-4" />
