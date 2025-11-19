@@ -412,7 +412,7 @@ export default function CarBody() {
           />
         </div>
       </div>
-      <div className="flex flex-col items-center z-10 [@media(max-width:500px)]:absolute top-[350px]">
+      <div className="flex flex-col items-center z-10 [@media(max-width:500px)]:absolute top-[350px] pt-4">
         <p className="text-2xl font-bold">Model 3</p>
         <div className="flex w-full justify-center items-center text-xs">
           <img src="/assets/model3/grok-icon.webp" className="w-4 h-4" />
