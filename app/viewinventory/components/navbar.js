@@ -7,8 +7,11 @@ import { ChevronRight } from "lucide-react";
 import { ChevronLeft } from "lucide-react";
 import { useState, useEffect, useRef, useLayoutEffect } from "react";
 import gsap from "gsap";
+import { supabase } from "../../lib/supabaseClient";
+import { useRouter } from "next/navigation";
 
 export default function Navigation() {
+  const router = useRouter();
   const [click, setClick] = useState(false);
   const [vehicle, setVehicle] = useState(false);
   const [energy, setEnergy] = useState(false);
@@ -47,6 +50,20 @@ export default function Navigation() {
     });
   }, []);
 
+  const handleClick = async () => {
+    const {
+      data: { session },
+    } = await supabase.auth.getSession();
+    if (session) {
+      router.push("/profile");
+    }
+    if (!session) {
+      router.push("/login");
+    }
+    console.log(session);
+    console.log("handle user fired");
+  };
+
   useEffect(() => {
     const slideElements = slides.map((slide) => slide.current);
 
@@ -79,7 +96,7 @@ export default function Navigation() {
   }, [menuOpen, click]);
 
   return (
-    <nav className="w-full z-30 absolute [@media(max-width:500px)]:sticky top-0 [@media(min-width:500px)]:fixed [@media(min-width:500px)]:top-[40px]">
+    <nav className="w-full z-30 absolute [@media(max-width:500px)]:sticky top-0 [@media(min-width:500px)]:fixed [@media(min-width:500px)]:top-[40px] dark:text-black">
       <div className="flex flex-col absolute top-0 z-10 w-full">
         <div className="flex justify-between h-[40px] items-center [@media(min-width:500px)]:bg-white">
           <a
@@ -181,7 +198,10 @@ export default function Navigation() {
           <div className="hidden [@media(min-width:950px)]:flex mr-8 space-x-6">
             <MessageCircleQuestion className="w-[20px] cursor-pointer" />
             <Globe className="w-[20px] cursor-pointer" />
-            <UserCircle className="w-[20px] cursor-pointer" />
+            <UserCircle
+              className="w-[20px] cursor-pointer"
+              onClick={handleClick}
+            />
           </div>
         </div>
         {menuOpen && (

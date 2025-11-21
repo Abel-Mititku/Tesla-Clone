@@ -36,7 +36,7 @@ export default function FooterSlide() {
 
   return (
     <div className="flex flex-col items-center relative mt-8">
-      <div className="flex space-x-6 items-center h-[430px] w-full scrollbar-hide [@media(max-width:500px)]:ml-[8px] [@media(min-width:500px)]:ml-4 [@media(min-width:700px)]:ml-8 overflow-x-scroll">
+      <div className="flex space-x-6 items-center h-[430px] w-full slide-hide [@media(max-width:500px)]:ml-[8px] [@media(min-width:500px)]:ml-4 [@media(min-width:700px)]:ml-8 overflow-x-scroll">
         <div
           ref={slides[0]}
           className="flex flex-col justify-end w-[70%] shrink-0 rounded-lg [@media(max-width:500px)]:bg-[url('/assets/Homepage-Card-Solar-Panels-Mobile.avif')] [@media(min-width:500px)]:bg-[url('/assets/Homepage-Card-Solar-Panels-Desktop.avif')] bg-cover bg-center] h-[400px]"

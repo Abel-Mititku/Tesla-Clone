@@ -119,7 +119,7 @@ export default function Navigation() {
                   }}
                   className={`${
                     vehicle ? `bg-gray-100` : ``
-                  } p-2 rounded cursor-pointer`}
+                  } p-2 rounded cursor-pointer text-black`}
                 >
                   Vehicles
                 </li>
@@ -133,7 +133,7 @@ export default function Navigation() {
                   }}
                   className={`${
                     energy ? `bg-gray-100` : ``
-                  } p-2 rounded cursor-pointer`}
+                  } p-2 rounded cursor-pointer text-black`}
                 >
                   Energy
                 </li>
@@ -148,7 +148,7 @@ export default function Navigation() {
                   }}
                   className={`${
                     charging ? `bg-gray-100` : ``
-                  } p-2 rounded cursor-pointer`}
+                  } p-2 rounded cursor-pointer text-black`}
                 >
                   Charging
                 </li>
@@ -163,7 +163,7 @@ export default function Navigation() {
                   }}
                   className={`${
                     discover ? `bg-gray-100` : ``
-                  } p-2 rounded cursor-pointer`}
+                  } p-2 rounded cursor-pointer text-black`}
                 >
                   Discover
                 </li>
@@ -178,7 +178,7 @@ export default function Navigation() {
                   }}
                   className={`${
                     shop ? `bg-gray-100` : ``
-                  } p-2 rounded cursor-pointer`}
+                  } p-2 rounded cursor-pointer text-black`}
                 >
                   Shop
                 </li>
@@ -197,10 +197,10 @@ export default function Navigation() {
             </div>
           )}
           <div className="hidden [@media(min-width:950px)]:flex mr-8 space-x-6">
-            <MessageCircleQuestion className="w-[20px] cursor-pointer" />
-            <Globe className="w-[20px] cursor-pointer" />
+            <MessageCircleQuestion className="w-[20px] cursor-pointer text-black" />
+            <Globe className="w-[20px] cursor-pointer text-black" />
             <UserCircle
-              className="w-[20px] cursor-pointer"
+              className="w-[20px] cursor-pointer text-black"
               onClick={handleClick}
             />
           </div>

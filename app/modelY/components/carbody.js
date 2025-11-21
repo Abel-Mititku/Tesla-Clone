@@ -659,12 +659,12 @@ export default function CarBody() {
           onClick={() => setDetails((prev) => !prev)}
         >
           {!details && (
-            <p className="flex hover:underline">
+            <p className="flex hover:underline cursor-pointer">
               Show Pricing Details <ChevronDown className="w-4 h-4" />
             </p>
           )}
           {details && (
-            <p className="flex hover:underline">
+            <p className="flex hover:underline cursor-pointer">
               Hide Pricing Details <ChevronUp className="w-4 h-4" />
             </p>
           )}
@@ -690,7 +690,7 @@ export default function CarBody() {
         </p>
         {!order && (
           <button
-            className="w-[80%] h-8 rounded-xs hover:bg-black hover:text-white border-2 text-xs text-gray-600 mt-6 mb-16"
+            className="w-[80%] h-8 rounded-xs dark:hover:bg-white dark:hover:text-black hover:bg-black hover:text-white border-2 text-xs text-gray-600 mt-6 mb-16"
             onClick={() => setOrder(true)}
           >
             Order with Card

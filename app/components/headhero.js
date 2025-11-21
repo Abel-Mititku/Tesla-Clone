@@ -79,12 +79,12 @@ export default function HeaderHero() {
     <div className="relative">
       <ChevronLeft
         onClick={previousSlide}
-        className="[@media(max-width:950px)]:hidden bg-white/60 opacity-[0.7] rounded w-8 h-8 absolute top-[200px] z-50 left-8 cursor-pointer hover:bg-gray-200"
+        className="[@media(max-width:950px)]:hidden text-black bg-white/60 opacity-[0.7] rounded w-8 h-8 absolute top-[200px] z-50 left-8 cursor-pointer hover:bg-gray-200"
       />
 
       <ChevronRight
         onClick={nextSlide}
-        className="[@media(max-width:950px)]:hidden bg-white/60 opacity-[0.7] rounded w-8 h-8 absolute top-[200px] z-50 right-8 cursor-pointer hover:bg-gray-200"
+        className="[@media(max-width:950px)]:hidden text-black bg-white/60 opacity-[0.7] rounded w-8 h-8 absolute top-[200px] z-50 right-8 cursor-pointer hover:bg-gray-200"
       />
 
       <div

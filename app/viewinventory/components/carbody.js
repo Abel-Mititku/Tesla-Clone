@@ -175,7 +175,7 @@ export default function CarBody() {
           <button className="w-full h-8 bg-white text-black dark:text-black border-2 border-gray-600/50">
             New
           </button>
-          <div className="relative flex flex-col items-center pb-30 bg-white">
+          <div className="relative flex flex-col items-center pb-30 bg-white dark:bg-black">
             <div className="w-[90%] mt-16 flex flex-col">
               <p
                 className="font-bold  flex justify-between"

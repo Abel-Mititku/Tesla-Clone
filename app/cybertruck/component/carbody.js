@@ -602,7 +602,7 @@ export default function CarBody() {
         <p className="text-xs opacity-[0.8] mt-2 mb-2">
           Composite bed that doesn’t need a liner
         </p>
-        <div className="w-[90%] text-xs border-2 border-black/20 bg-gray-200 px-2 py-4">
+        <div className="w-[90%] text-xs border-2 border-black/20 bg-gray-200 px-2 py-4 dark:text-black">
           <div className="flex justify-between mb-2">
             <p>Premium Bed Package</p>
             <p>Included</p>
@@ -618,7 +618,7 @@ export default function CarBody() {
         <p className="text-xs opacity-[0.8] mt-2 mb-2">
           High strength, Class IV steel tow bar
         </p>
-        <div className="w-[90%] text-xs border-2 border-black/20 bg-gray-200 px-2 py-4">
+        <div className="w-[90%] dark:text-black text-xs border-2 border-black/20 bg-gray-200 px-2 py-4">
           <div className="flex justify-between mb-2">
             <p>Tow Package</p>
             <p>Included</p>
@@ -807,12 +807,12 @@ export default function CarBody() {
           onClick={() => setDetails((prev) => !prev)}
         >
           {!details && (
-            <p className="flex hover:underline">
+            <p className="flex hover:underline cursor-pointer">
               Show Pricing Details <ChevronDown className="w-4 h-4" />
             </p>
           )}
           {details && (
-            <p className="flex hover:underline">
+            <p className="flex hover:underline cursor-pointer">
               Hide Pricing Details <ChevronUp className="w-4 h-4" />
             </p>
           )}
@@ -838,7 +838,7 @@ export default function CarBody() {
         </p>
         {!order && (
           <button
-            className="w-[80%] h-8 rounded-xs hover:bg-black hover:text-white border-2 text-xs text-gray-600 mt-6 mb-16"
+            className="w-[80%] h-8 rounded-xs dark:hover:bg-white dark:hover:text-black hover:bg-black hover:text-white border-2 text-xs text-gray-600 mt-6 mb-16"
             onClick={() => setOrder(true)}
           >
             Order with Card

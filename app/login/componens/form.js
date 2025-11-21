@@ -69,7 +69,7 @@ export default function LoginForm() {
                 id="email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                className="mt-2 bg-gray-100 h-10 mb-4 focus:border-gray-600/80 focus:ring-1 focus:ring-gray-400 outline-none transition-all duration-300 rounded p-2 "
+                className="mt-2 bg-gray-100 dark:text-black dark:focus:border-black-600  h-10 mb-4 focus:border-gray-600/80 focus:ring-1 focus:ring-gray-400 outline-none transition-all duration-300 rounded p-2 "
               />
             </div>
           )}
@@ -81,7 +81,7 @@ export default function LoginForm() {
                 id="password"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
-                className="mt-2 bg-gray-100 h-10 mb-4 focus:border-gray-600/80 focus:ring-1 focus:ring-gray-400 outline-none transition-all duration-300 rounded p-2 "
+                className="mt-2 bg-gray-100 dark:text-black dark:focus:border-black-600 h-10 mb-4 focus:border-gray-600/80 focus:ring-1 focus:ring-gray-400 outline-none transition-all duration-300 rounded p-2 "
               />
             </div>
           )}
@@ -117,7 +117,7 @@ export default function LoginForm() {
           <div className="opacity-[0.4] border-t w-[158px]"></div>
         </div>
         <button
-          className="w-[350px] h-10 bg-gray-100 rounded font-bold mt-8 hover:border-2"
+          className="w-[350px] h-10 dark:hover:bg-white dark:hover:text-black dark:text-black bg-gray-100 rounded font-bold mt-8 dark:border-gray-600 hover:border-2"
           onClick={() => {
             router.replace("/register");
             setRegister(true);

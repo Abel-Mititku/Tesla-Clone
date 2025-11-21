@@ -26,7 +26,7 @@ export default function Hero() {
 
   return (
     <div className="h-16 z-30 [@media(min-width:500px)]:fixed top-0 bg-gradient-to-l from-orange-200 via-orange-100 to-orange-200 [@media(max-width:500px)]:flex-col flex justify-center items-center w-full [@media(min-width:500px)]:justify-between">
-      <div className="flex [@media(max-width:500px)]:flex-col items-center justify-between z-30 [@media(max-width:500px)]:bg-gradient-to-l from-orange-200 via-orange-100 to-orange-200 w-full h-16">
+      <div className="flex [@media(max-width:500px)]:flex-col items-center justify-between z-30 [@media(max-width:500px)]:bg-gradient-to-l from-orange-200 via-orange-100 to-orange-200 w-full h-16 dark:text-black">
         {currentIndex === 0 && (
           <div
             ref={refs[0]}

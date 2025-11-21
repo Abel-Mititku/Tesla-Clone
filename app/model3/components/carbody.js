@@ -807,7 +807,7 @@ export default function CarBody() {
         <div className="w-[80%]">
           <div
             className={`flex justify-between text-xs h-8 items-center px-2 opacity-[0.8] border rounded mt-4 ${
-              light && `border-2 border-black-400 bg-gray-100`
+              light && `border-2 border-black-400 bg-gray-100 text-black`
             }`}
             onClick={() => setLight((prev) => !prev)}
           >
@@ -819,7 +819,7 @@ export default function CarBody() {
           </div>
           <div
             className={`flex justify-between text-xs h-8 items-center px-2 opacity-[0.8] border rounded mt-4 ${
-              consoleTrays && `border-2 border-black-400 bg-gray-100`
+              consoleTrays && `border-2 border-black-400 bg-gray-100 text-black`
             }`}
             onClick={() => setConsoleTrays((prev) => !prev)}
           >
@@ -831,7 +831,8 @@ export default function CarBody() {
           </div>
           <div
             className={`flex justify-between text-xs h-8 items-center px-2 opacity-[0.8] border rounded mt-4 ${
-              interiorLinears && `border-2 border-black-400 bg-gray-100`
+              interiorLinears &&
+              `border-2 border-black-400 bg-gray-100 text-black`
             }`}
             onClick={() => setInteriorLinears((prev) => !prev)}
           >
@@ -844,7 +845,7 @@ export default function CarBody() {
           </div>
           <div
             className={`flex justify-between text-xs h-8 items-center px-2 opacity-[0.8] border rounded mt-4 ${
-              roofRack && `border-2 border-black-400 bg-gray-100`
+              roofRack && `border-2 border-black-400 bg-gray-100 text-black`
             }`}
             onClick={() => setRoofRack((prev) => !prev)}
           >
@@ -924,12 +925,12 @@ export default function CarBody() {
           onClick={() => setDetails((prev) => !prev)}
         >
           {!details && (
-            <p className="flex hover:underline">
+            <p className="flex hover:underline cursor-pointer">
               Show Pricing Details <ChevronDown className="w-4 h-4" />
             </p>
           )}
           {details && (
-            <p className="flex hover:underline">
+            <p className="flex hover:underline cursor-pointer">
               Hide Pricing Details <ChevronUp className="w-4 h-4" />
             </p>
           )}
@@ -955,7 +956,7 @@ export default function CarBody() {
         </p>
         {!order && (
           <button
-            className="w-[80%] h-8 rounded-xs hover:bg-black hover:text-white border-2 text-xs text-gray-600 mt-6 mb-16"
+            className="w-[80%] h-8 rounded-xs hover:bg-black dark:hover:bg-white dark:hover:text-black hover:text-white border-2 text-xs text-gray-600 mt-6 mb-16"
             onClick={() => {
               handleOrder();
             }}
@@ -973,35 +974,35 @@ export default function CarBody() {
             <input
               type="text"
               id="first-name"
-              className="mt-2 w-full bg-gray-100 h-10 mb-4 focus:border-gray-600/80 focus:ring-1 focus:ring-gray-400 outline-none transition-all duration-300 rounded p-2 "
+              className="mt-2 w-full dark:text-black dark:focus:border-black-600 bg-gray-100 h-10 mb-4 focus:border-gray-600/80 focus:ring-1 focus:ring-gray-400 outline-none transition-all duration-300 rounded p-2 "
               onChange={(e) => setFirstName(e.target.value)}
             />
             <label htmlFor="last-name">Last Name</label>
             <input
               type="text"
               id="last-name"
-              className="mt-2 w-full bg-gray-100 h-10 mb-4 focus:border-gray-600/80 focus:ring-1 focus:ring-gray-400 outline-none transition-all duration-300 rounded p-2 "
+              className="mt-2 w-full dark:text-black dark:focus:border-black-600  bg-gray-100 h-10 mb-4 focus:border-gray-600/80 focus:ring-1 focus:ring-gray-400 outline-none transition-all duration-300 rounded p-2 "
               onChange={(e) => setLastName(e.target.value)}
             />
             <label htmlFor="email">Email</label>
             <input
               type="email"
               id="email"
-              className="mt-2 w-full bg-gray-100 h-10 mb-4 focus:border-gray-600/80 focus:ring-1 focus:ring-gray-400 outline-none transition-all duration-300 rounded p-2 "
+              className="mt-2 w-full dark:text-black dark:focus:border-black-600  bg-gray-100 h-10 mb-4 focus:border-gray-600/80 focus:ring-1 focus:ring-gray-400 outline-none transition-all duration-300 rounded p-2 "
               onChange={(e) => setEmail(e.target.value)}
             />
             <label htmlFor="confirm-email">Confirm Email</label>
             <input
               type="email"
               id="confirm-email"
-              className="mt-2 w-full bg-gray-100 h-10 mb-4 focus:border-gray-600/80 focus:ring-1 focus:ring-gray-400 outline-none transition-all duration-300 rounded p-2 "
+              className="mt-2 w-full dark:text-black dark:focus:border-black-600  bg-gray-100 h-10 mb-4 focus:border-gray-600/80 focus:ring-1 focus:ring-gray-400 outline-none transition-all duration-300 rounded p-2 "
               onChange={(e) => setConfirmEmail(e.target.value)}
             />
             <label htmlFor="mobile">Mobile Number</label>
             <input
               type="phone"
               id="mobile"
-              className="mt-2 w-full bg-gray-100 h-10 mb-4 focus:border-gray-600/80 focus:ring-1 focus:ring-gray-400 outline-none transition-all duration-300 rounded p-2 "
+              className="mt-2 w-full dark:text-black dark:focus:border-black-600  bg-gray-100 h-10 mb-4 focus:border-gray-600/80 focus:ring-1 focus:ring-gray-400 outline-none transition-all duration-300 rounded p-2 "
               onChange={(e) => setPhone(e.target.value)}
             />
             <p className="text-xs">
@@ -1018,35 +1019,35 @@ export default function CarBody() {
             <input
               type="text"
               id="card-name"
-              className="mt-2 w-full bg-gray-100 h-10 mb-4 focus:border-gray-600/80 focus:ring-1 focus:ring-gray-400 outline-none transition-all duration-300 rounded p-2 "
+              className="mt-2 w-full dark:text-black dark:focus:border-black-600 bg-gray-100 h-10 mb-4 focus:border-gray-600/80 focus:ring-1 focus:ring-gray-400 outline-none transition-all duration-300 rounded p-2 "
               onChange={(e) => setCardName(e.target.value)}
             />
             <label htmlFor="card-number">Card Number</label>
             <input
               type="text"
               id="card-number"
-              className="mt-2 w-full bg-gray-100 h-10 mb-4 focus:border-gray-600/80 focus:ring-1 focus:ring-gray-400 outline-none transition-all duration-300 rounded p-2 "
+              className="mt-2 w-full dark:text-black dark:focus:border-black-600  bg-gray-100 h-10 mb-4 focus:border-gray-600/80 focus:ring-1 focus:ring-gray-400 outline-none transition-all duration-300 rounded p-2 "
               onChange={(e) => setCardNumber(e.target.value)}
             />
             <label htmlFor="expiration-month">Expiration Month</label>
             <input
               type="text"
               id="expiration-month"
-              className="mt-2 w-full bg-gray-100 h-10 mb-4 focus:border-gray-600/80 focus:ring-1 focus:ring-gray-400 outline-none transition-all duration-300 rounded p-2 "
+              className="mt-2 w-full dark:text-black dark:focus:border-black-600  bg-gray-100 h-10 mb-4 focus:border-gray-600/80 focus:ring-1 focus:ring-gray-400 outline-none transition-all duration-300 rounded p-2 "
               onChange={(e) => setExpireMonth(e.target.value)}
             />
             <label htmlFor="expiration-year">Expiration Year</label>
             <input
               type="text"
               id="expiration-year"
-              className="mt-2 w-full bg-gray-100 h-10 mb-4 focus:border-gray-600/80 focus:ring-1 focus:ring-gray-400 outline-none transition-all duration-300 rounded p-2 "
+              className="mt-2 w-full dark:text-black dark:focus:border-black-600  bg-gray-100 h-10 mb-4 focus:border-gray-600/80 focus:ring-1 focus:ring-gray-400 outline-none transition-all duration-300 rounded p-2 "
               onChange={(e) => setExpireYear(e.target.value)}
             />
             <label htmlFor="security-code">Security Code</label>
             <input
               type="text"
               id="security-code"
-              className="mt-2 w-full bg-gray-100 h-10 mb-4 focus:border-gray-600/80 focus:ring-1 focus:ring-gray-400 outline-none transition-all duration-300 rounded p-2 "
+              className="mt-2 w-full dark:text-black dark:focus:border-black-600  bg-gray-100 h-10 mb-4 focus:border-gray-600/80 focus:ring-1 focus:ring-gray-400 outline-none transition-all duration-300 rounded p-2 "
               onChange={(e) => setSecurityCode(e.target.value)}
             />
 
@@ -1054,7 +1055,7 @@ export default function CarBody() {
             <input
               type="text"
               id="billing-zip-code"
-              className="mt-2 w-full bg-gray-100 h-10 mb-4 focus:border-gray-600/80 focus:ring-1 focus:ring-gray-400 outline-none transition-all duration-300 rounded p-2 "
+              className="mt-2 w-full dark:text-black dark:focus:border-black-600  bg-gray-100 h-10 mb-4 focus:border-gray-600/80 focus:ring-1 focus:ring-gray-400 outline-none transition-all duration-300 rounded p-2 "
               onChange={(e) => setBillingZipCode(e.target.value)}
             />
             <label htmlFor="delivery-zip">Delivery ZIP</label>
@@ -1062,7 +1063,7 @@ export default function CarBody() {
               type="text"
               id="delivery-zip"
               placeholder="Enter ZIP Code"
-              className="mt-2 w-full bg-gray-100 h-10 mb-4 focus:border-gray-600/80 focus:ring-1 focus:ring-gray-400 outline-none transition-all duration-300 rounded p-2 "
+              className="mt-2 w-full dark:text-black dark:focus:border-black-600  bg-gray-100 h-10 mb-4 focus:border-gray-600/80 focus:ring-1 focus:ring-gray-400 outline-none transition-all duration-300 rounded p-2 "
               onChange={(e) => setDeliveryZipCode(e.target.value)}
             />
             <p className="text-xs">

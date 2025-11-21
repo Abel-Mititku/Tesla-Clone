@@ -1,5 +1,6 @@
 "use client";
-import { Link } from "lucide-react";
+
+import Link from "next/link";
 import { useState } from "react";
 import ReCAPTCHA from "react-google-recaptcha";
 
@@ -129,7 +130,10 @@ export default function Register() {
               >
                 Region
               </label>
-              <select id="region" className="bg-gray-100 h-8 p-1">
+              <select
+                id="region"
+                className="bg-gray-100 h-8 p-1 dark:text-black"
+              >
                 <option>United States</option>
                 <option>Canada</option>
                 <option>Puerto Rico</option>
@@ -148,7 +152,7 @@ export default function Register() {
                 type="text"
                 id="first-name"
                 onChange={(e) => setFirstName(e.target.value)}
-                className="bg-gray-100 rounded focus:border-gray-600/80 focus:ring-1 focus:ring-gray-600 transition-all h-8 p-1 outline-none duration-300"
+                className="bg-gray-100 dark:focus:border-black dark:text-black rounded focus:border-gray-600/80 focus:ring-1 focus:ring-gray-600 transition-all h-8 p-1 outline-none duration-300"
                 required
               />
               <label
@@ -161,7 +165,7 @@ export default function Register() {
                 type="text"
                 id="last-name"
                 onChange={(e) => setLastName(e.target.value)}
-                className="bg-gray-100 rounded focus:border-gray-600/80 focus:ring-1 focus:ring-gray-600 transition-all h-8 p-1 outline-none duration-300"
+                className="bg-gray-100 dark:focus:border-black dark:text-black rounded focus:border-gray-600/80 focus:ring-1 focus:ring-gray-600 transition-all h-8 p-1 outline-none duration-300"
                 required
               />
               {error && <p className="text-xs text-red-500">{error}</p>}
@@ -179,7 +183,7 @@ export default function Register() {
                 type="email"
                 id="email"
                 onChange={(e) => setEmail(e.target.value)}
-                className="bg-gray-100 rounded focus:border-gray-600/80 focus:ring-1 focus:ring-gray-600 transition-all h-8 p-1 outline-none duration-300"
+                className="bg-gray-100 dark:focus:border-black dark:text-black rounded focus:border-gray-600/80 focus:ring-1 focus:ring-gray-600 transition-all h-8 p-1 outline-none duration-300"
               />
               <label
                 htmlFor="password"
@@ -191,7 +195,7 @@ export default function Register() {
                 type="password"
                 id="password"
                 onChange={(e) => setPassword(e.target.value)}
-                className="bg-gray-100 rounded focus:border-gray-600/80 focus:ring-1 focus:ring-gray-600 transition-all h-8 p-1 outline-none duration-300"
+                className="bg-gray-100 dark:focus:border-black dark:text-black rounded focus:border-gray-600/80 focus:ring-1 focus:ring-gray-600 transition-all h-8 p-1 outline-none duration-300"
               />
               <label
                 htmlFor="confirm-password"
@@ -204,7 +208,7 @@ export default function Register() {
                 id="confirm-password"
                 onChange={(e) => setConfirmPassword(e.target.value)}
                 value={confirmPassword}
-                className="bg-gray-100 rounded focus:border-gray-600/80 focus:ring-1 focus:ring-gray-600 transition-all h-8 p-1 outline-none duration-300"
+                className="bg-gray-100 dark:focus:border-black dark:text-black rounded focus:border-gray-600/80 focus:ring-1 focus:ring-gray-600 transition-all h-8 p-1 outline-none duration-300"
               />
               {error && <p className="text-xs text-red-500">{error}</p>}
               {current === 1 && (
@@ -264,7 +268,7 @@ export default function Register() {
 
         {current > 0 && current !== 2 && (
           <button
-            className={`w-[350px] h-10 bg-gray-100 rounded font-bold mt-8 ${
+            className={`w-[350px] h-10 bg-gray-100 rounded font-bold mt-8 dark:text-black ${
               prev && `border-2 border-black`
             }`}
             onClick={handlePrevious}
