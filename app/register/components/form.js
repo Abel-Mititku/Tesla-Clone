@@ -214,7 +214,7 @@ export default function Register() {
               {current === 1 && (
                 <div className="mt-6 mb-4">
                   <ReCAPTCHA
-                    sitekey="6LfnVOYrAAAAAFd_lGbmTV9392Za-jg86NhB1P8D"
+                    sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY}
                     onChange={handleCaptchaChange}
                   />
                 </div>
