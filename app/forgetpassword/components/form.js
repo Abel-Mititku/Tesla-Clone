@@ -49,7 +49,7 @@ export default function ForgetPassword() {
       return;
     }
     const { error } = await supabase.auth.resetPasswordForEmail(email, {
-      redirectTo: "https://abels-tesla-clone-one-rho.vercel.app/email",
+      redirectTo: "https://abels-tesla-clone-one-tau.vercel.app/email",
     });
     if (error) {
       alert("Something went wrong try again");
@@ -94,7 +94,7 @@ export default function ForgetPassword() {
 
           {current === 1 && (
             <ReCAPTCHA
-              sitekey="6LfnVOYrAAAAAFd_lGbmTV9392Za-jg86NhB1P8D"
+              sitekey={process.env.RECAPTCHA_SECRET_KEY}
               onChange={handleCaptchaChange}
               className="mt-8"
             />

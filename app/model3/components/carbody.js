@@ -330,11 +330,10 @@ export default function CarBody() {
     <div className="relative flex max-[500px]:flex-col min-[500px]:mt-8 min-[500px]:pt-16 w-screen">
       <div className={`h-[500vh]`}>
         <div className="sticky z-20 max-[500px]:top-0 min-[500px]:top-[100px]">
-          <div className="bg-white z-5 w-full absolute max-[500px]:h-[260px] min-[500px]:h-[370px]"></div>
           {gray && photon && (
             <img
               src={`/assets/model3/${modelGrayPhoton[currentIndex]}`}
-              className="relative z-10 object-contain"
+              className="z-10 object-contain"
             />
           )}
           {red && photon && (

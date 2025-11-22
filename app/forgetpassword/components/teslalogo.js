@@ -5,7 +5,7 @@ export default function TeslaLogo() {
   return (
     <div className="relative">
       <div className="z-30">
-        <div className="text-black dark:black flex justify-between mt-4 w-screen bg-white">
+        <div className="text-black dark:black flex justify-between h-8 w-screen bg-white">
           <a href="#" className="ml-4 [@media(min-width:500px)]:ml-8">
             T E S L A
           </a>
