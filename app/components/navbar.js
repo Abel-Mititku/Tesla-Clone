@@ -803,7 +803,7 @@ export default function Navigation() {
         )}
 
         {click && (
-          <div className="absolute bg-white top-0 left-0 w-full h-[100vh] z-60 text-sm overflow-y-scroll">
+          <div className="absolute bg-white top-0 left-0 w-full h-[500px] z-60 text-sm overflow-y-scroll">
             <button
               onClick={() => {
                 setClick(false);
