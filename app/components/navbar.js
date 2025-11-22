@@ -803,7 +803,7 @@ export default function Navigation() {
         )}
 
         {click && (
-          <div className="absolute bg-white top-0 left-0 w-full h-screen z-60 text-sm overflow-y-scroll">
+          <div className="absolute bg-white top-0 left-0 w-full h-[100vh] z-60 text-sm overflow-y-scroll">
             <button
               onClick={() => {
                 setClick(false);
@@ -821,16 +821,11 @@ export default function Navigation() {
             <ul className="space-y-[10px] mt-16 bg-white mb-16">
               <li
                 className={`p-4 cursor:pointer flex justify-between ${
-                  clickVehicle && `bg-gray-100`
-                } ${
                   menuOpen
                     ? `text-white`
                     : `text-black dark:text-black hover:bg-gray-100`
                 }`}
-                onClick={() => {
-                  setVehicle(true);
-                  setClickVehicle(true);
-                }}
+                onClick={() => setVehicle(true)}
               >
                 <p>Vehicles</p>
                 <ChevronRight
@@ -841,16 +836,11 @@ export default function Navigation() {
               </li>
               <li
                 className={`p-4 cursor:pointer flex justify-between ${
-                  clickEnergy && `bg-gray-100`
-                } ${
                   menuOpen
                     ? `text-white`
                     : `text-black dark:text-black hover:bg-gray-100`
                 }`}
-                onClick={() => {
-                  setEnergy(true);
-                  setClickEnergy(true);
-                }}
+                onClick={() => setEnergy(true)}
               >
                 <p>Energy</p>{" "}
                 <ChevronRight
@@ -861,16 +851,11 @@ export default function Navigation() {
               </li>
               <li
                 className={`p-4 cursor:pointer flex justify-between ${
-                  clickCharge && `bg-gray-100`
-                } ${
                   menuOpen
                     ? `text-white`
                     : `text-black dark:text-black hover:bg-gray-100`
                 }`}
-                onClick={() => {
-                  setCharging(true);
-                  setClickCharge(true);
-                }}
+                onClick={() => setCharging(true)}
               >
                 <p>Charging</p>{" "}
                 <ChevronRight
@@ -881,16 +866,11 @@ export default function Navigation() {
               </li>
               <li
                 className={`p-4 cursor:pointer flex justify-between ${
-                  clickDiscover && `bg-gray-100`
-                } ${
                   menuOpen
                     ? `text-white`
                     : `text-black dark:text-black hover:bg-gray-100`
                 }`}
-                onClick={() => {
-                  setDiscover(true);
-                  setClickDiscover(true);
-                }}
+                onClick={() => setDiscover(true)}
               >
                 <p>Discover</p>{" "}
                 <ChevronRight
@@ -899,9 +879,7 @@ export default function Navigation() {
                   }`}
                 />
               </li>
-              <li
-                className={`hover:bg-gray-100  p-4 cursor:pointer text-black dark:text-black`}
-              >
+              <li className="hover:bg-gray-100  p-4 cursor:pointer text-black dark:text-black">
                 Shop
               </li>
               <li className="hover:bg-gray-100  p-4 cursor:pointer flex justify-between text-black dark:text-black">
