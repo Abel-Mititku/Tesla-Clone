@@ -85,7 +85,7 @@ export default function ForgetPassword() {
                 type="email"
                 id="email"
                 value={email}
-                className="mt-2 bg-gray-100 h-10 mb-4 focus:border-gray-600/80 focus:ring-1 focus:ring-gray-400 outline-none transition-all duration-300 rounded p-2 "
+                className="mt-2 bg-gray-100 h-10 mb-4 dark:text-black dark:focus:border-black-600 focus:border-gray-600/80 focus:ring-1 focus:ring-gray-400 outline-none transition-all duration-300 rounded p-2 "
                 onChange={(e) => setEmail(e.target.value)}
                 required
               />
@@ -103,7 +103,7 @@ export default function ForgetPassword() {
           {current === 1 && (
             <button
               type="submit"
-              className={`bg-blue-800/50 mt-4 h-10 text-white font-bold hover:bg-blue-800/80 ${
+              className={`bg-blue-800/50 mt-4 h-10 dark:text-black dark:focus:border-black-600 text-white font-bold hover:bg-blue-800/80 ${
                 verify && `bg-blue-800/80 border-2 border-black`
               }`}
             >

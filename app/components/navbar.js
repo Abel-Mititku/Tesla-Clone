@@ -18,6 +18,12 @@ export default function Navigation() {
   const [charging, setCharging] = useState(false);
   const [discover, setDiscover] = useState(false);
   const [shop, setShop] = useState(false);
+  const [clickVehicle, setClickVehicle] = useState(false);
+  const [clickEnergy, setClickEnergy] = useState(false);
+  const [clickCharge, setClickCharge] = useState(false);
+  const [clickDiscover, setClickDiscover] = useState(false);
+  const [clickShop, setClickShop] = useState(false);
+  const [clickProfile, setClickProfile] = useState(false);
   const menuOpen = vehicle || energy || charging || discover || shop;
   const slides = [
     useRef(null),
@@ -83,6 +89,7 @@ export default function Navigation() {
   }, [menuOpen, click]);
 
   const handleClick = async () => {
+    setClickProfile(true);
     const {
       data: { session },
     } = await supabase.auth.getSession();
@@ -811,14 +818,19 @@ export default function Navigation() {
               <X />
             </button>
 
-            <ul className="space-y-[10px] mt-16 bg-white">
+            <ul className="space-y-[10px] mt-16 bg-white mb-16">
               <li
                 className={`p-4 cursor:pointer flex justify-between ${
+                  clickVehicle && `bg-gray-100`
+                } ${
                   menuOpen
                     ? `text-white`
                     : `text-black dark:text-black hover:bg-gray-100`
                 }`}
-                onClick={() => setVehicle(true)}
+                onClick={() => {
+                  setVehicle(true);
+                  setClickVehicle(true);
+                }}
               >
                 <p>Vehicles</p>
                 <ChevronRight
@@ -829,11 +841,16 @@ export default function Navigation() {
               </li>
               <li
                 className={`p-4 cursor:pointer flex justify-between ${
+                  clickEnergy && `bg-gray-100`
+                } ${
                   menuOpen
                     ? `text-white`
                     : `text-black dark:text-black hover:bg-gray-100`
                 }`}
-                onClick={() => setEnergy(true)}
+                onClick={() => {
+                  setEnergy(true);
+                  setClickEnergy(true);
+                }}
               >
                 <p>Energy</p>{" "}
                 <ChevronRight
@@ -844,11 +861,16 @@ export default function Navigation() {
               </li>
               <li
                 className={`p-4 cursor:pointer flex justify-between ${
+                  clickCharge && `bg-gray-100`
+                } ${
                   menuOpen
                     ? `text-white`
                     : `text-black dark:text-black hover:bg-gray-100`
                 }`}
-                onClick={() => setCharging(true)}
+                onClick={() => {
+                  setCharging(true);
+                  setClickCharge(true);
+                }}
               >
                 <p>Charging</p>{" "}
                 <ChevronRight
@@ -859,11 +881,16 @@ export default function Navigation() {
               </li>
               <li
                 className={`p-4 cursor:pointer flex justify-between ${
+                  clickDiscover && `bg-gray-100`
+                } ${
                   menuOpen
                     ? `text-white`
                     : `text-black dark:text-black hover:bg-gray-100`
                 }`}
-                onClick={() => setDiscover(true)}
+                onClick={() => {
+                  setDiscover(true);
+                  setClickDiscover(true);
+                }}
               >
                 <p>Discover</p>{" "}
                 <ChevronRight
@@ -872,7 +899,9 @@ export default function Navigation() {
                   }`}
                 />
               </li>
-              <li className="hover:bg-gray-100  p-4 cursor:pointer text-black dark:text-black">
+              <li
+                className={`hover:bg-gray-100  p-4 cursor:pointer text-black dark:text-black`}
+              >
                 Shop
               </li>
               <li className="hover:bg-gray-100  p-4 cursor:pointer flex justify-between text-black dark:text-black">
@@ -886,7 +915,9 @@ export default function Navigation() {
                 <ChevronRight className="opacity-[0.7]" />
               </li>
               <li
-                className="hover:bg-gray-100  p-4 flex cursor:pointer text-black dark:text-black"
+                className={`hover:bg-gray-100 ${
+                  clickProfile && `bg-gray-100`
+                }  p-4 flex cursor:pointer text-black dark:text-black`}
                 onClick={handleClick}
               >
                 <UserCircle onClick={handleClick} />

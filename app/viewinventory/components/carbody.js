@@ -134,6 +134,18 @@ export default function CarBody() {
     selectedPaint,
   ]);
 
+  useEffect(() => {
+    if (filter) {
+      document.body.style.overflow = "hidden"; // stop scroll
+    } else {
+      document.body.style.overflow = "auto"; // restore scroll
+    }
+
+    return () => {
+      document.body.style.overflow = "auto";
+    };
+  }, [filter]);
+
   console.log("selected model", selectedModel, selectedTrim, selectedPaint);
 
   useEffect(() => {
@@ -663,7 +675,7 @@ export default function CarBody() {
         <div className="w-screen h-[100vh] z-30 backdrop-blur-sm bg-white/30 p-6 rounded-xl absolute top-0 [@media(min-width:800px)]:hidden"></div>
       )}
       {filter && (
-        <div className="w-full h-screen bg-white z-50 absolute top-[30px] [@media(min-width:800px)]:hidden">
+        <div className="w-full h-screen dark:text-black bg-white overflow-y-auto z-50 absolute top-[30px] [@media(min-width:800px)]:hidden">
           <div className="relative flex flex-col items-center pb-30 bg-white">
             <div className="sticky top-[30px] right-0 w-full">
               <X

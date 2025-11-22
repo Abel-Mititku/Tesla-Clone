@@ -68,7 +68,7 @@ export default function ChangePassword() {
             id="new-password"
             value={newPassword}
             onChange={(e) => setNewPassword(e.target.value)}
-            className="mt-2 bg-gray-100 h-10 mb-4 focus:border-gray-600/80 focus:ring-1 focus:ring-gray-400 outline-none transition-all duration-300 rounded p-2 "
+            className="mt-2 bg-gray-100 h-10 mb-4 dark:text-black dark:focus:border-black-600 focus:border-gray-600/80 focus:ring-1 focus:ring-gray-400 outline-none transition-all duration-300 rounded p-2 "
           />
           <label htmlFor="confirm-password">Confirm Password</label>
           <input
@@ -76,7 +76,7 @@ export default function ChangePassword() {
             id="confirm-password"
             value={confirmPassword}
             onChange={(e) => setConfirmPassword(e.target.value)}
-            className="mt-2 bg-gray-100 h-10 mb-4 focus:border-gray-600/80 focus:ring-1 focus:ring-gray-400 outline-none transition-all duration-300 rounded p-2 "
+            className="mt-2 bg-gray-100 h-10 mb-4 dark:text-black dark:focus:border-black-600 focus:border-gray-600/80 focus:ring-1 focus:ring-gray-400 outline-none transition-all duration-300 rounded p-2 "
           />
           {error && <p className="text-xs text-red-500">{error}</p>}
           <button
