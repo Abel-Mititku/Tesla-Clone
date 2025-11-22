@@ -257,77 +257,78 @@ export default function CarBody() {
   return (
     <div className="relative flex [@media(max-width:500px)]:flex-col [@media(min-width:500px)]:mt-8  [@media(min-width:500px)]:pt-16">
       <div className={`h-[500vh]`}>
-        <div className="sticky z-20 [@media(max-width:500px)]:top-0 [@media(min-width:500px)]:top-[100px]">
+        <div className="sticky z-20 relative [@media(max-width:500px)]:top-0 [@media(min-width:500px)]:top-[100px]">
+          <div className="bg-white z-0 w-full absolute max-[500px]:h-[260px] min-[500px]:h-[370px]"></div>
           {gray && pherihelix && (
             <img
               src={`/assets/modelX/${modelGrayPherihelix[currentIndex]}`}
-              className="z-10 object-contain"
+              className="relative z-10 object-contain"
             />
           )}
           {red && pherihelix && (
             <img
               src={`/assets/modelX/${modelRedPherihelix[currentIndex]}`}
-              className="z-10 object-contain"
+              className="relative z-10 object-contain"
             />
           )}
           {blue && pherihelix && (
             <img
               src={`/assets/modelX/${modelBluePherihelix[currentIndex]}`}
-              className="z-10 object-contain"
+              className="relative z-10 object-contain"
             />
           )}
           {silver && pherihelix && (
             <img
               src={`/assets/modelX/${modelSilverPherihelix[currentIndex]}`}
-              className="z-10 object-contain"
+              className="relative z-10 object-contain"
             />
           )}
           {black && pherihelix && (
             <img
               src={`/assets/modelX/${modelBlackPherihelix[currentIndex]}`}
-              className="z-10 object-contain"
+              className="relative z-10 object-contain"
             />
           )}
           {white && pherihelix && (
             <img
               src={`/assets/modelX/${modelWhitePherihelix[currentIndex]}`}
-              className="z-10 object-contain"
+              className="relative z-10 object-contain"
             />
           )}
           {gray && machina && (
             <img
               src={`/assets/modelX/${modelGrayMachina[currentIndex]}`}
-              className="z-10 object-contain"
+              className="relative z-10 object-contain"
             />
           )}
           {white && machina && (
             <img
               src={`/assets/modelX/${modelWhiteMachina[currentIndex]}`}
-              className="z-10 object-contain"
+              className="relative z-10 object-contain"
             />
           )}
           {blue && machina && (
             <img
               src={`/assets/modelX/${modelBlueMachina[currentIndex]}`}
-              className="z-10 object-contain"
+              className="relative z-10 object-contain"
             />
           )}
           {black && machina && (
             <img
               src={`/assets/modelX/${modelBlackMachina[currentIndex]}`}
-              className="z-10 object-contain"
+              className="relative z-10 object-contain"
             />
           )}
           {silver && machina && (
             <img
               src={`/assets/modelX/${modelSilverMachina[currentIndex]}`}
-              className="z-10 object-contain"
+              className="relative z-10 object-contain"
             />
           )}
           {red && machina && (
             <img
               src={`/assets/modelX/${modelRedMachina[currentIndex]}`}
-              className="z-10 object-contain"
+              className="relative z-10 object-contain"
             />
           )}
           <ChevronLeft

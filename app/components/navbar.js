@@ -889,11 +889,7 @@ export default function Navigation() {
                 className="hover:bg-gray-100  p-4 flex cursor:pointer text-black dark:text-black"
                 onClick={handleClick}
               >
-                <UserCircle
-                  onClick={() => {
-                    router.push("/login");
-                  }}
-                />
+                <UserCircle onClick={handleClick} />
                 Account
               </li>
             </ul>
