@@ -194,78 +194,77 @@ export default function CarBody() {
   return (
     <div className="relative flex [@media(max-width:500px)]:flex-col [@media(min-width:500px)]:mt-8  [@media(min-width:500px)]:pt-16">
       <div className="h-[300vh]">
-        <div className="sticky z-20 relative top-0 model-Y">
-          <div className="bg-white z-0 w-full absolute max-[500px]:h-[260px] min-[500px]:h-[370px]"></div>
+        <div className="sticky z-20 top-0 model-Y">
           {gray && photon && (
             <img
               src={`/assets/modelY/${modelGrayPhoton[currentIndex]}`}
-              className="relative z-10 object-contain"
+              className="z-10 object-contain"
             />
           )}
           {red && photon && (
             <img
               src={`/assets/modelY/${modelRedPhoton[currentIndex]}`}
-              className="relative z-10 object-contain"
+              className="z-10 object-contain"
             />
           )}
           {blue && photon && (
             <img
               src={`/assets/modelY/${modelBluePhoton[currentIndex]}`}
-              className="relative z-10 object-contain"
+              className="z-10 object-contain"
             />
           )}
           {silver && photon && (
             <img
               src={`/assets/modelY/${modelSilverPhoton[currentIndex]}`}
-              className="relative z-10 object-contain"
+              className="z-10 object-contain"
             />
           )}
           {black && photon && (
             <img
               src={`/assets/modelY/${modelBlackPhoton[currentIndex]}`}
-              className="relative z-10 object-contain"
+              className="z-10 object-contain"
             />
           )}
           {white && photon && (
             <img
               src={`/assets/modelY/${modelWhitePhoton[currentIndex]}`}
-              className="relative z-10 object-contain"
+              className="z-10 object-contain"
             />
           )}
           {gray && nova && (
             <img
               src={`/assets/modelY/${modelGrayNova[currentIndex]}`}
-              className="relative z-10 object-contain"
+              className="z-10 object-contain"
             />
           )}
           {white && nova && (
             <img
               src={`/assets/modelY/${modelWhiteNova[currentIndex]}`}
-              className="relative z-10 object-contain"
+              className="z-10 object-contain"
             />
           )}
           {blue && nova && (
             <img
               src={`/assets/modelY/${modelBlueNova[currentIndex]}`}
-              className="relative z-10 object-contain"
+              className="z-10 object-contain"
             />
           )}
           {black && nova && (
             <img
               src={`/assets/modelY/${modelBlackNova[currentIndex]}`}
-              className="relative z-10 object-contain"
+              className="z-10 object-contain"
             />
           )}
           {silver && nova && (
             <img
               src={`/assets/modelY/${modelSilverNova[currentIndex]}`}
-              className="relative z-10 object-contain"
+              className="z-10 object-contain"
             />
           )}
           {red && nova && (
             <img
               src={`/assets/modelY/${modelRedNova[currentIndex]}`}
-              className="relative z-10 object-contain"
+              className="z-10 object-contain"
             />
           )}
           <ChevronLeft
