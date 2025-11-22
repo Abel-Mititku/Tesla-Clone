@@ -53,6 +53,7 @@ export default function CarBody() {
   const [red, setRed] = useState(false);
   const [selectedPaint, setSelectedPaint] = useState("Blue Paint");
   const [error, setError] = useState(false);
+  const [loadingCar, setLoadingCar] = useState(false);
 
   useEffect(() => {
     if (selectedModel === "Model 3") {
@@ -67,6 +68,7 @@ export default function CarBody() {
 
   useEffect(() => {
     async function fetchVehicles() {
+      setLoadingCar(true);
       let query = supabase.from("vehicles").select("*");
       if (selectedModel === "Cybertruck") {
         query = query.eq("model", selectedModel);
@@ -122,6 +124,7 @@ export default function CarBody() {
         console.error(error);
       } else {
         setVehicles(data);
+        setLoadingCar(false);
       }
     }
     fetchVehicles();
@@ -566,6 +569,7 @@ export default function CarBody() {
           </div>
         </div>
         <div className="grid [@media(max-width:800px)]:grid-cols-1 [@media(min-width:800px)]:grid-cols-2 ml-8 mr-8 [@media(max-width:500px)]:m-0 w-full">
+          {loadingCar && <p>Loading Cars</p>}
           {Vehicles &&
             selectedModel === "Cybertruck" &&
             Vehicles.map((vehicle, index) => (
